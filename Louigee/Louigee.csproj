@@ -78,6 +78,7 @@
     <Content Include="default.html" />
     <Content Include="images\20181205_163220.jpg" />
     <Content Include="images\border.png" />
+    <Content Include="images\ginos.png" />
     <Content Include="images\Louigee.png" />
     <Content Include="images\Title.png" />
     <Content Include="scripts\bootstrap.bundle.js" />
@@ -115,6 +116,7 @@
     <Content Include="scripts\umd\popper-utils.min.js" />
     <Content Include="scripts\umd\popper.js" />
     <Content Include="scripts\umd\popper.min.js" />
+    <Content Include="ulmb_cal.txt" />
     <Content Include="Web.config" />
     <Content Include="scripts\umd\popper.min.js.map" />
     <Content Include="scripts\umd\popper.js.map" />

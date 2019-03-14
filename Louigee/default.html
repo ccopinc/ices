@@ -1,20 +1,45 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<title>Uncle Louie Gee Italian Ice - Myrtle Beach</title>
-	<style type="text/css">
-		.title-border {
-			top: 0px;
-			background-image: url('/images/border.png');
-			background-repeat: repeat-x;
-			height: 40px;
-		}
-		a:hover{
-			color:blue;
-		}
-	</style>
+    <meta charset="utf-8" />
+
+    <title>Uncle Louie Gee Italian Ice - Myrtle Beach</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        .title-border {
+            top: 0px;
+            background-image: url('/images/border.png');
+            background-repeat: repeat-x;
+            height: 40px;
+        }
+
+        a:hover {
+            color: blue;
+        }
+    </style>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            var file ='ulmb_cal.txt';
+            //  load calenedar
+            $.get(file,function(txt){
+                var lines = txt.split("\n");
+                for (var i = 0, len = lines.length; i < len; i++) {
+                    var stuff = lines[i].split(",");
+                    var dt = '<div style="padding-bottom:15px;">';
+                    dt = dt + '<span style="font-weight:bold;">' + stuff[0] + '</span><br>';
+                    dt = dt + '<span>Where: ' + stuff[1] + '</span><br>';
+                    dt = dt + '<span>From: ' + stuff[2] + '</span><br>';
+                    dt = dt + '<span>Until: ' + stuff[3] + '</span><br>';
+                    dt = dt + '</div>';
+                    $('#divDates').append(dt);
+                }
+            }); 
+
+
+        });
+
+    </script>
 </head>
 <body>
 	<div class="container">
@@ -29,25 +54,34 @@
 				<img src="images/title.png" />
 			</div>
 		</div>
-		<table style="padding-top:50px;">
-			<tr>
-				<td style="width:20%">
-					<div><a href="#" style="padding=top:25px;text-decoration:none;font-weight:bold; font-family:'Brush Script MT';font-size:28pt;">Our Products</a></div>
-					<div><a href="#" style="padding=top:25px;text-decoration:none;font-weight:bold; font-family:'Brush Script MT';font-size:28pt;">Contact Us</a></div>
-					<div><a href="#" style="padding=top:25px;text-decoration:none;font-weight:bold; font-family:'Brush Script MT';font-size:28pt;">About Us</a></div>
-				</td>
-				<td style="width:45%">
-					<div style="font-size:20pt;text-align:left;font-family:Arial;"><img style="float:right;" src="images/20181205_163220.jpg" />
-					<p>This section about Uncle Louige Gourmet Italian Ice</p>
-					<p>We are the only Uncle Louigie Gourment Italian Ice in Myrtle Beach, SC.  Our products have been made in New York for over 20 years.</p>
-					<p></p>
-					div>
-				</td>
-				<td style="width:35%">
-					
-				</td>
-			</tr>
-		</table>
+	    <table style="padding-top:30px; width: 1450px;">
+	        <tr style="vertical-align: top;">
+	            <td style="width:20%">
+	                <div><a href="#" style="padding-top:25px;text-decoration:none;font-weight:bold; font-family:'Brush Script MT';font-size:28pt;">Our Products</a></div>
+	                <div><a href="#" style="padding-top:25px;text-decoration:none;font-weight:bold; font-family:'Brush Script MT';font-size:28pt;">Contact Us</a></div>
+	                <div><a href="#" style="padding-top:25px;text-decoration:none;font-weight:bold; font-family:'Brush Script MT';font-size:28pt;">About Us</a></div>
+	                <div class="w3-round w3-pale-blue w3-border w3-border-black" style="padding-left: 15px;width: 200px; padding-top: 5px;">
+	                    <span class="w3-text-red font-weight-bold"  style="font-family: cursive; font-size: 20pt;text-shadow:1px 1px 0 black">Calendar</span>
+	                    <div id="divDates" style="padding-top: 15px; overflow:auto;overflow-x: hidden;">
+
+	                    </div>
+	                </div>
+	            </td>
+	            <td style="width:65%">
+	                <div style="font-size:16pt;text-align:left;font-family:Arial;">
+	                    <img style="float:right;" src="images/20181205_163220.jpg" />
+	                    <p>The best things in life taste great. Louie G. learned this lesson from his family and by following it strictly, and using family proven recipes, the excellence of his ices and ice creams have been maintained over the years and endorsed by the establishment of over 45 franchises in eight separate states. And as the ever growing number of highly satisfied customers and the continuing happy success of our franchises attest, there’s no stopping a good, and mouth-watering, treat!</p>
+	                    <p>We are the only Uncle Louigie Gourment Italian Ice in Myrtle Beach, SC.  Our products have been made in New York for over 20 years.</p>
+
+                        
+	                </div>
+	            </td>
+	            <td style="width:25%">
+	                <img src="images/ginos.png" />
+	            </td>
+	        </tr>
+	    </table>
+        <div id="footer" class="title-border"></div>
 
 	</div>
 </body>
