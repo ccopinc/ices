@@ -80,6 +80,7 @@
     <Content Include="images\border.png" />
     <Content Include="images\ginos.png" />
     <Content Include="images\Louigee.png" />
+    <Content Include="images\testimonial_template.png" />
     <Content Include="images\Title.png" />
     <Content Include="myrtle-beach-Italian-Ice%27Contact.html" />
     <Content Include="scripts\bootstrap.bundle.js" />
