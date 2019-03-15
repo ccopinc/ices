@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="myrtle-beach-Italian-Ice'Contact.aspx.cs" Inherits="Louigee.myrtle_beach_Italian_Ice_Contact" %>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,13 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type="text/javascript">
-        function showContact() {
-            var gen = document.getElementById("general");
-            var spec = document.getElementById("specialEvents");
-            if (gen.style.display === 'block') {
-                gen.style.display === 'none';
-            }
-        }
+       
 
     </script>
     <style type="text/css">
@@ -57,24 +52,26 @@
                 </div>
             </td>
             <td style="width:65%">
-                <div style="font-size:14pt;text-align:left;font-family:Arial;">
-                    <table style="width:100%">
+                <div style="font-size: 14pt; text-align: left; font-family: Arial;">
+                    
+                    <table style="width: 700px;">
                         <tr>
-                            <td style="width: 100%;">
-                                <div class="w3-bar">
-
-                                    <p style="width: 100%; text-align: center;">Click for the contact form for either General Information, or hiring us for Special Events</p>
-                                    <input type="button" onclick="showContact()" class="w3-bar-item w3-button w3-teal w3-border w3-border-black" style="width:50%">General Information</input>
-                                    <input type ="button" class="w3-bar-item w3-button w3-light-blue w3-border w3-border-black" style="width:50%">Special Events</input>
-
-                                </div>
-                            </td>
+                            <td>Email:&nbsp;</td>
+                            <td colspan="3"><input style="width: 600px;" type="text" id="email"/></td>
                         </tr>
                         <tr>
-                            <td>
-                                <div style="display: none;" id="specialEvents">Special Events</div>
-                                <div style="display: block;" id="general">General Information</div>
-                            </td>
+                            <td>Name:&nbsp;</td>
+                            <td><input type="text" id="name"/></td>
+                            <td>Phone:&nbsp;</td>
+                            <td><input type="text" id="phone"/></td>
+                        </tr>
+                        <tr>
+                            <td>Message:&nbsp;</td>
+                            <td colspan="3"><textarea style="width: 600px;"  id="email"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="3" style="text-align: center;"><button type="button" style="width: 600px;">Email Us</button></td>
                         </tr>
                     </table>
                 </div>
