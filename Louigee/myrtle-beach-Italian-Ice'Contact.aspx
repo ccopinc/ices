@@ -56,6 +56,13 @@
                     
                     <table style="width: 700px;">
                         <tr>
+                            <td colspan="4">
+                                <p>
+                                    If you would like to inquire about hiring us for your next party or event, or just want general information about our products feel free to contact us by filling out the form below.  All fields are required. We appreciate your support.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>Email:&nbsp;</td>
                             <td colspan="3"><input style="width: 600px;" type="text" id="email"/></td>
                         </tr>
