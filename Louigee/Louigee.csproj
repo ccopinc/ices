@@ -82,7 +82,7 @@
     <Content Include="images\Louigee.png" />
     <Content Include="images\testimonial_template.png" />
     <Content Include="images\Title.png" />
-    <Content Include="myrtle-beach-Italian-Ice%27Contact.html" />
+    <Content Include="myrtle-beach-Italian-Ice%27Contact.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -131,6 +131,13 @@
     <Content Include="scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="myrtle-beach-Italian-Ice%27Contact.aspx.cs">
+      <DependentUpon>myrtle-beach-Italian-Ice%27Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myrtle-beach-Italian-Ice%27Contact.aspx.designer.cs">
+      <DependentUpon>myrtle-beach-Italian-Ice%27Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
